@@ -4,7 +4,7 @@ curso de Animaciones para la Web
 
 `Realizado con preprocesadores Style & PUG`
 
-Previsualización: 
+Previsualización: https://walterxz.github.io/Practice-WebAnimations/html
 
 ## Propiedades CSS utilizadas
 
