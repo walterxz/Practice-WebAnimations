@@ -1,0 +1,27 @@
+.canasta
+    border 2px solid red
+    position relative
+    height 100px
+    width 100%
+    .pelota
+        position: absolute
+        transition 1.5s
+        display flex
+        align-items center
+        justify-content center
+        color: white
+        font-weight: bold
+    &:hover
+        border 2px solid green dashed
+        .pelota-a
+            left calc(50% - 100px)
+        .pelota-b
+            right calc(50% - 100px)
+
+.pelota-a
+    backgound red
+    left 0
+
+.pelota-b
+    background blue
+    right 0

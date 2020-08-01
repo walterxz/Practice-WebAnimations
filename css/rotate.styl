@@ -1,0 +1,38 @@
+.rotate
+    display: flex
+    align-items: center
+    justify-content: center
+    height 200px
+    background-color: silver 
+    border 3px dashed red
+    &:hover
+        background-color: aqua
+        .cuadro
+            background-color: green
+        .a
+            transform: rotate(360deg)
+        .b
+            transform: rotateX(360deg)
+        .c
+            transform: rotateY(360deg)
+        .d
+            transform: rotateZ(360deg)
+        .e
+            transform: rotateX(360deg) rotateY(360deg)
+        .f
+            transform: rotateX(360deg) rotateZ(360deg)
+        .g
+            transform: rotateY(360deg) rotateZ(360deg)
+        .h
+            transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg)
+.cuadro
+    width: 100px
+    height: 100px
+    background: #7dc900
+    border 2px solid green
+    margin: 20px
+    transition: 10s
+    display: flex
+    justify-content: center
+    align-items: center
+    font-weight: bold
