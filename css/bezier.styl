@@ -1,0 +1,54 @@
+.bezier
+    height 90px
+    background-color:black
+    display: flex
+    padding: 8px
+    border-radius: 10px
+
+@keyframes ball 
+    0%
+        left 0%
+        background: red
+    17%
+        background: orange 
+    33%
+        background: yellow
+    49%
+        background: green 
+    66%
+        background: lightblue
+    82%
+        background: navy
+    100%
+        background: violet
+        left calc(100% - 90px)
+
+.ball
+    position: relative
+    height 90px
+    width: 90px
+    border-radius 50%
+    animation-name ball
+    animation-duration: 4s
+    animation-iteration-count: infinite
+    animation-direction alternate
+
+.ball-a
+    @extend.ball
+    animation-timing-function: ease-in
+
+.ball-b
+    @extend.ball
+    animation-timing-function: ease-out
+
+.ball-c
+    @extend.ball
+    animation-timing-function: ease-in-out
+
+.ball-d
+    @extend.ball
+    animation-timing-function: linear
+
+.ball-e
+    @extend.ball
+    animation-timing-function: cubic-bezier(0,1,1,0)

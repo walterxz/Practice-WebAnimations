@@ -6,6 +6,8 @@
     background-color: lightgrey
     border 3px dashed black
     perspective: 200px
+    perspective-origin:top
+    margin: 10px 0
     &:hover
         background-color: silver
         .cuadro-x
@@ -13,19 +15,20 @@
             background-color: black
             border 2px solid pink
         .a-x
-            transform: translateX(350px)
+            transform: translateX(250px)
         .b-x
-            transform: translateY(350px)
+            transform: translateY(250px)
         .c-x
-            transform: translateX(-350px)
+            transform: translateX(-250px)
         .d-x
-            transform: translateY(-350px)
+            transform: translateY(-250px)
         .e-x
-            transform: translateZ(150px)
+            transform: translateZ(100px)
         .f-x
-            transform: translateZ(-350px)
+            transform: translateZ(-250px)
 
 .cuadro-x
+    position: absolute
     width: 100px
     height: 100px
     background: pink

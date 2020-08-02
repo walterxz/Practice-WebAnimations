@@ -1,0 +1,32 @@
+.skew
+    display: flex
+    align-items: center
+    justify-content: center
+    height 200px
+    background-color: lightgrey
+    border 3px dashed salmon
+    a
+        font-size: 70px
+        color:lightgrey
+    &:hover
+        a
+            color:black
+        background-color: orange
+        .cuadro-sk
+            background-color: black
+        .a-sk
+            transform: skew(45deg)
+        .b-sk
+            transform: skew(-45deg)
+
+.cuadro-sk
+    width: 66px
+    height: 100px
+    background: magenta
+    border 2px solid black
+    margin: 20px
+    transition: .8s
+    display: flex
+    justify-content: center
+    align-items: center
+    font-weight: bold
